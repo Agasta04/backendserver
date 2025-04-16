@@ -1,0 +1,30 @@
+{
+  "name": "hafalan_santri_backend",
+  "version": "1.0.0",
+  "description": "Backend API untuk aplikasi monitoring hafalan santri",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.18.2",
+    "firebase-admin": "^13.2.0",
+    "moment-timezone": "^0.5.40",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Nama Anda",
+  "license": "MIT"
+}
