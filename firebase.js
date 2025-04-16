@@ -1,5 +1,6 @@
 const admin = require("firebase-admin");
-const serviceAccount = require("./firebase-service-account.json"); // ganti path sesuai lokasi file
+
+const serviceAccount = JSON.parse(process.env.FIREBASE_CONFIG); // Ambil dari environment variable
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
