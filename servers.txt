@@ -1,0 +1,11 @@
+// server.js (root project)
+const app = require("./backend/app");
+require("dotenv").config();
+
+const PORT = process.env.PORT || 3000;
+const HOST = process.env.HOST || "0.0.0.0";
+
+// Jalankan server di Railway
+app.listen(PORT, HOST, () => {
+  console.log(`🚀 Server berjalan di http://${HOST}:${PORT}`);
+});
